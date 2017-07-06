@@ -6,8 +6,10 @@
 
 Strings manipulation :
 * base64 encoded ?
-  `#echo $STRING | base64 --decode`
-  `# openssl enc -base64 -d <<< $STRING`
+  ```
+  # echo $STRING | base64 --decode
+  # openssl enc -base64 -d <<< $STRING
+  ```
   
 Scan all files in a website : 
   `# dirb http://$WEBSITE$ (-p $PROXY)`
