@@ -2,21 +2,19 @@
 
 ## Webapps
 
-* Check for headers
+* Check for headers when accesing website
 
-Strings manipulation :
+### Strings manipulation :
 * base64 encoded ?
   ```
   # echo $STRING | base64 --decode
   # openssl enc -base64 -d <<< $STRING
   ```
   
-Scan all files in a website : 
+### Scan all files in a website root folder : 
   `# dirb http://$WEBSITE$ (-p $PROXY)`
   
   
- Get the list of words to build a dictionnary : 
-  `# cewl http://$WEBSITE`
   
  Try a dictionnary on a password :
   Set Burp as INTRUDER, and set the ¨POST request and then the payload as a list of words
